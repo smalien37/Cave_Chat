@@ -1,0 +1,10 @@
+BottomMenu bar options 
+    -> Add People
+    -> Emoticon
+    -> Spelling 
+    -> Clear
+
+-> Names with their online status on the right hand side
+
+TOP MENU BAR-> 
+    
