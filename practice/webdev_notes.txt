@@ -44,6 +44,15 @@ HOST IT IN GITHUB:
 
 =============================================================
 
+3 ways of adding css:
+ - INTERNAL    e.g <style> html{background: red;}  </style> -> this block is present in the head mostly
+ - EXTERNAL    e.g: <link rel = "stylesheet" href = "path"/> 
+ - INLINE      e.g: <html style = ""background:blue"> </html> 
 
+CSS Color properties:
+---------------------
 
+colorhunt.co -. professionally designed colors with hex codes
+
+ 
 
