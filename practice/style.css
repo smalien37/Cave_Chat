@@ -1,0 +1,105 @@
+/* Element Selector -> here we are literally choosing the element & mentioning the html element */
+h1{color: rgb(76, 0, 255);  
+   background-color: rgb(219, 255, 127); 
+   /* Font size can be represented as point pt, Pixels px, 1em (100% of parent) & 1rem (100% of root) */
+   /* 1px -> 1/96th of inch  1pt ->1/72nd finch   */
+   font-size: 30px;
+    /* Font weight 100 to 900 & lighter/bolder & normal/bold */
+   font-weight: 300;
+   /* Font family -> fonts  */
+   font-family: 'Dancing Script', cursive; /*One is type face & generic typeface */
+
+   /* text Align  */
+   text-align: center;
+
+}
+
+/* Class Selector -> here we mention the class to any html element & they will have the class property*/
+/* Kinda like grouping the html elements that can have the same STYLING */
+.new-edit{
+    color: aqua;
+}
+
+/* ID SELECTOR -> Here we group the HTML elements using the id as a parameter */
+#new-style{
+    color: yellow;
+}
+/* ID takes OVER the CLASS CSS */
+/* & ID is UNIQUE & class u can put many elements */
+
+/* ATTRIBUTE SELECTOR ->  So here we can get all the attributes associated to the element & assign*/
+a[href="./public/contact.html"]{
+    color: red;
+}
+
+/* This adds the css to all the elements & it sin the botoomlayer */
+*{
+    color:black;
+}
+
+/* div{
+    height: 120px;
+    width: 120px;
+} */
+
+.test{
+    height: 120px;
+    width: 120px;
+    border: 7px solid black; /* border property that haspoint style & color */
+        border-top: 0px;
+        border-bottom: 5px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+:root{  /* This is like defining ceratain colors that u are gonna use in the styles.css*/
+    --Facebook: hsl(208,92%,53%);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{ /*Entire document */
+    box-sizing: inherit;
+}
+
+h4{
+    color: var(--Facebook);
+}
+
+a, a:visited,a:active{
+    text-decoration: none;
+}
+
+.imageCheck{
+    width: 250px;
+    background-color: black;
+    text-align: center;    
+}
+
+.imageCheck img{
+    height: 200px;
+    width: 200px;
+    /* box-sizing: border-box; */
+    border: 2px solid rgb(162, 255, 1);
+    margin-top: 10px;
+}
+
+.imageCheck h2{
+    font-weight: normal;
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.imageCheck h5{
+    color: azure;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+}
+
+

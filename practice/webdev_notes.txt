@@ -1,0 +1,58 @@
+<hr/> -> this is a horizontal rule or line & they are self closing tag or void tags
+<br/> or <br> -> breka line both are working
+
+<ul>  -> Unordered List
+
+<ul>
+    <li>YOLO</li>
+    <li> hey bro</li>
+</ul>
+-> here u will get bullet ponts
+
+
+<ol>   -> Ordered LIST
+    <li>YOLO</li>
+    <li> hey bro</li>
+    <li>
+        <ul>
+            <li>Hiiiii</li>
+        </ul>
+    
+    </li>
+</ol>
+-> here u will get Numbering
+
+We can have nesded Lists as well
+
+
+dragabble Attribute -> set this as true or false & then we can drag any tag
+
+So we need to start our ordered List from a desired Number say: 5 or 10 
+we can use an attribute called: start = "5" 
+
+------------------
+HOST IT IN GITHUB:
+------------------
+
+-> Head to Github. Create a new REPO use PUBLIC
+-> Add the project folder - assets, public, index & stuff
+-> We have to use the specified name INDEX.HTML as the name in order to work.
+-> Go to Settings of that repo -> Choose pages from the left PANE
+-> In the branch section - > choose main & SAVE
+-> REFRESH the page couple of times 
+-> THEN lookk at the link they provide
+
+=============================================================
+
+3 ways of adding css:
+ - INTERNAL    e.g <style> html{background: red;}  </style> -> this block is present in the head mostly
+ - EXTERNAL    e.g: <link rel = "stylesheet" href = "path"/> 
+ - INLINE      e.g: <html style = ""background:blue"> </html> 
+
+CSS Color properties:
+---------------------
+
+colorhunt.co -. professionally designed colors with hex codes
+
+ 
+
