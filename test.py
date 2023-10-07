@@ -12,5 +12,6 @@ def maxPoints(points) -> int:
 
     print(m)
     return mi
+    //THIS IS TO CHECK WHETHER IT IS PULLING CORRECTLY!!!!!
 
 print(maxPoints([[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]))
