@@ -1,17 +1,22 @@
-def maxPoints(points) -> int:
-    m,mi = {},-1e9
-    for i in range(len(points) - 1):
-        for j in range(i+1,len(points)):
-            if (points[j][0] - points[i][0]) == 0:
-                r = points[j][0]
-            else: r =  (points[j][1] - points[i][1]) / (points[j][0] - points[i][0])
-            m[r] = 1 + m.get(r,0)
-    
-    for j in m:
-        mi = max(mi,m[j])
+def check( gas, cost, k):
+        i, tank = k, 0
+        tank +=  gas[i] - cost[i]
+        while True:
+            if i == (len(gas) - 1): i = 0
+            else: i += 1
+            if i == k: 
+                return 1
+            if tank < gas[i]:
+                return -1 
+            tank +=  gas[i] - cost[i]
 
-    print(m)
-    return mi
-    //THIS IS TO CHECK WHETHER IT IS PULLING CORRECTLY!!!!!
+def canCompleteCircuit(gas, cost) -> int:
+    for i in range(len(gas)):
+        if gas[i] > cost[i]:
+            if check(gas,cost,i) == 1: return i
+    return -1
 
-print(maxPoints([[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]))
+gas = [1,2,3,4,5]
+cost = [3,4,5,1,2]
+
+print(canCompleteCircuit(gas, cost))
